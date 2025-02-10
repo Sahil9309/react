@@ -1,0 +1,16 @@
+import yt_dlp
+
+# URL of the YouTube video
+video_url = input("Enter the YouTube video URL: ")
+
+# Set up download options
+ydl_opts = {
+    'format': 'bestvideo[height<=1080]+bestaudio/best[height<=1080]',  # Download 1080p video with audio
+    'outtmpl': '%(title)s.%(ext)s',  # Save with the video title
+}
+
+# Download the video
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    ydl.download([video_url])
+
+print("Download complete!")
