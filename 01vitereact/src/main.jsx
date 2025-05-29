@@ -1,15 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import App from './App.jsx'
 
-function MyApp(){
-    return (
-        <div>
-            <h1>Custom App | chai</h1>
-        </div>
-    )
-}
+// function MyApp(){
+//     return (
+//         <div>
+//             <h1>Custom App | chai</h1>
+//         </div>
+//     )
+// }
 
 // const ReactElement = {
 //     type: 'a',
@@ -26,7 +25,7 @@ const anotherElement = (
 
 
 
-const anotherUser = "chai aur react"
+// const anotherUser = "chai aur react"
 
 const reactElement = React.createElement(
     'a',
